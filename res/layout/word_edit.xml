@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp" >
+
+    <EditText
+        android:id="@+id/english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/phonetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/english"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/phonetic"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Chn" />
+
+        <CheckBox
+            android:id="@+id/checkboxbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox"
+            android:layout_marginTop="2dp"
+            android:text="Bi" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonetic"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" >
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1" />
+
+    <CheckBox
+        android:id="@+id/reviewFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:text="Review" />
+
+    <EditText
+        android:id="@+id/chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewFlag"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/example_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_below="@id/chinese"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>

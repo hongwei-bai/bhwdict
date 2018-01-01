@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/back_a_word"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Back a word"/>
+    <item
+        android:id="@+id/gotest"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="-> Test"/>
+    <item
+        android:id="@+id/goinput"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="-> Dict"/>
+    <item
+        android:id="@+id/goedit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="-> Browse"/>
+    <item
+        android:id="@+id/exportlatest"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Export latest"/>
+    <item
+        android:id="@+id/exportall"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Export All"/>
+    <item
+        android:id="@+id/importadd"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Import"/>
+    <item
+        android:id="@+id/importall"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Import All(Caution!)"
+        android:visible="false"/>
+    <item
+        android:id="@+id/install_dict"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Install Dict"/>
+    <item
+        android:id="@+id/debug"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="never"
+        android:title="Debug:None"/>
+    <!-- action views -->
+    <item
+        android:id="@+id/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always"
+        android:title="查询"/>
+
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="test_button_width">50dp</dimen>
+    <dimen name="pass_button_width">70dp</dimen>
+    <dimen name="fail_button_width">60dp</dimen>
+    <dimen name="save_button_width">140dp</dimen>
+    <dimen name="speak_button_width">50dp</dimen>
+    <dimen name="shift_language_button_width">50dp</dimen>
+    <dimen name="next_button_width">60dp</dimen>
+    <dimen name="repeat_button_width">50dp</dimen>
+    <dimen name="see_button_width">55dp</dimen>
+    <dimen name="button_gap">4dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+
+</resources>

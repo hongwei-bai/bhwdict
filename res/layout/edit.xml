@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/shiftLanguage"
+        android:layout_width="@dimen/test_button_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spinner"
+        android:text="英"
+        android:visibility="gone" />
+
+    <bhwWords.test.StatusButton
+        android:id="@+id/speakAll"
+        android:layout_width="@dimen/test_button_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shiftLanguage"
+        android:text="听" />
+
+    <bhwWords.test.StatusButton
+        android:id="@+id/pause"
+        android:layout_width="@dimen/test_button_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/speakAll"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/allocate"
+        android:layout_width="@dimen/test_button_width"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pause"
+        android:text="L"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speakAll" >
+    </ListView>
+
+</RelativeLayout>

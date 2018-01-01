@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp" >
+
+    <Spinner
+        android:id="@+id/topic_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/speak_ib_selector"
+        android:text="发音" />
+
+    <EditText
+        android:id="@+id/english"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@id/speak"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chinese"
+        android:layout_below="@id/english" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add"
+        android:ems="10"
+        android:hint="add"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="@dimen/save_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        android:visibility="visible" />
+
+</RelativeLayout>

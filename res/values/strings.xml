@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Words</string>
+    <string name="app_name2">Dict</string>
+    <string name="search">"Search"</string>
+    <string name="addhint">"add"</string>
+    
+
+</resources>
